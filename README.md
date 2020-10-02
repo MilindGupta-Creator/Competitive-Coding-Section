@@ -1,28 +1,24 @@
-Competitive Coding Section:
 
-This repository is made to help anyone beginning with competitive programming.
-
-This repository will help you in knowing the kind of approaches that can be used to solve a problem.
-
-Solutions to the problems are also provided to help you with your practice.
-
-This repository also contains codes on data structures.
+# Creating Competitive-Coding-Section or subfolders
+Create sections labeled further in issue section
 
 
+## Competitive Coding Section:
 
-To the contributors:
+- This repository is made to help anyone beginning with competitive programming.
+- This repository will help you in knowing the kind of approaches that can be used to solve a problem.
+- Solutions to the problems are also provided to help you with your practice.
+- This repository also contains codes on data structures.
+
+
+
+## To the contributors:
 
 You can contribute to this repository by explaining a competitive programming question or by explaining a data structure.
 Make sure to add your contributions under proper folders with appropriate file names.
 
-If you are explaining a competitive programming question, be sure to include all types of approaches that can be used to solve the problem.
-Also mention the best approach to solve it, providing a code for it as well.
+### For competitive programming questions and Data Structures, 
+- be sure to include all types of approaches that can be used to solve the problem.
+- you can mention the best approach to solve it with the help of code
 
-If you are explaining a data structure, don’t forget to provide a code for it as well.
-
-Be sure that the codes that you write is readable, i.e. a beginner in programming can understand them.
-
-
-# Competitive-Coding-Section
-Create sections labeled further in issue section
-
+Be sure that the code that you write is readable by using sensible function names and not writing single character variables, with proper indentation and spacing between functions.
