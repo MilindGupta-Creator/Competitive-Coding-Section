@@ -10,7 +10,6 @@ This repository also contains codes on data structures.
 
 
 
-
 To the contributors:
 
 You can contribute to this repository by explaining a competitive programming question or by explaining a data structure.
