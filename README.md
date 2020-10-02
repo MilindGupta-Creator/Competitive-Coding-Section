@@ -22,3 +22,7 @@ If you are explaining a data structure, don’t forget to provide a code for it 
 
 Be sure that the codes that you write is readable, i.e. a beginner in programming can understand them.
 
+
+# Competitive-Coding-Section
+Create sections labeled further in issue section
+
