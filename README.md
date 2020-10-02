@@ -1,2 +1,2 @@
 # Competitive-Coding-Section
-Create sections labbled further in issue section
+Create sections labeled further in issue section
