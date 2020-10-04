@@ -3,22 +3,18 @@
 Create sections labeled further in issue section
 
 
-## Competitive Coding Section:
+## Competitive Coding Section
+This repository has a collection of problems in different programming languages for those who are new to competitive programming or those who want to start competitive programming.
 
-- This repository is made to help anyone beginning with competitive programming or want to start competative programming.
-- This repository will help you in knowing the kind of approaches that can be used to solve a problem.
-- Solutions to the problems are also provided to help you with your practice.
-- This repository also contains codes on data structures.
+You can use these problems to understand the different approaches that you can use to solve a problem or use the solution for your practice. This repository also contains a sample code on data structures.
 
 
+## Contributing guidelines
+Contribute to this repository by explaining either a competitive programming question or a data structure.
 
-## To the contributors:
+	- Include all approaches that can be used to solve the problem.
+	- Mention the best approach to solve the problem with the help of code.
+	- Make sure your code is readable, i.e. it uses sensible function names with proper indentation and spacing between functions.
+	- Use a clear file name that gives a hint on what the problem is about.
+	- Add your file to the appropriate folder. If you don't know the right folder to add your file, mention in the pull request.
 
-You can contribute to this repository by explaining a competitive programming question or by explaining a data structure.
-Make sure to add your contributions under proper folders with appropriate file names.
-
-### For competitive programming questions and Data Structures, 
-- be sure to include all types of approaches that can be used to solve the problem.
-- you can mention the best approach to solve it with the help of code
-
-Be sure that the code that you write is readable by using sensible function names and not writing single character variables, with proper indentation and spacing between functions.
