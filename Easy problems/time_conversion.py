@@ -25,7 +25,9 @@ if __name__ == '__main__':
     f.close()
 """
 Input
-Download
 07:05:45PM
-Your Output (stdout)
+
+Your Output
 19:05:45
+
+"""
