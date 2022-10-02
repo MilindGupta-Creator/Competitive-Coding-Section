@@ -1,0 +1,58 @@
+          #include <bits/stdc++.h>
+          #define pin cin
+          #define ios ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+          #define ll long long int
+          #define pl cout<<"\n";
+          #define mp make_pair
+          #define pb push_back
+          #define vll vector<ll>
+          #define all(x) (x).begin(),(x).end()
+          #define f first
+          #define s second 
+          #define prv(v) for(auto x:v) cout<<x<<" ";//reverse
+          #define for0(i,n) for(ll i=0;i<n;i++)//Yes//YES
+          #define foru(i,n) for(ll i=n-1;i>=0;i--)//order_of_key
+          #define floop(i,l,n)for(int i=l;i<=n;i++)//find_by_order
+          #define for1(i,n) for(ll i=1;i<=n;i++) //pop_back()
+          using namespace std; 
+          ll dp[100001];
+          ll  recur(ll index,vector<ll>&h,ll &mini)
+          {
+            if (index<0) {return 1e18;}
+            if(index==0)return 0;
+            if(dp[index]!=-1)return dp[index];
+            ll ans1=1e18,ans2=1e18;
+           if (index>1)ans1=abs(h[index]-h[index-2])+recur(index-2,h,mini);
+           ans2=abs(h[index]-h[index-1])+recur(index-1,h,mini);
+           return dp[index]=min(ans1,ans2);
+          }
+          void solve()
+          {
+          ll temp=0,ans=0,cnt=0,sta=0,maxi=-1e18,res=0,sum=0,mini=1e18,prod=0;
+          map<ll,ll>mpp,mpp1;
+          set<ll>sp,so;
+          memset(dp,-1,sizeof(dp));
+          ll a;
+          cin>>a;
+          ll arr[a];
+          for0(i,a) cin>>arr[i];
+          vll v;
+          for0(i,a)
+          {
+            v.pb(arr[i]);
+          }
+          cout<<recur(a-1,v,mini);
+          //cout<<mini<<"\n";
+          }
+          int main()  
+          {
+          ios
+          ll t=1;
+          // cin>>t;
+          for1(i,t)
+          {
+          // cout<<"Case #"<<i<<": "; 
+           solve();
+          }
+           return 0;
+          }  
