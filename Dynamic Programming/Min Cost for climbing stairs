@@ -1,0 +1,16 @@
+class Solution {
+public:
+        int dp[100031];
+    int rec(int i,vector<int>&cost) 
+    {
+            if (i>=cost.size()) {return 0;}
+            if(dp[i]!=-1) return dp[i];
+          int left  =  cost[i]+rec(i+1,cost);
+          int right =  cost[i]+rec(i+2,cost);
+            return dp[i]=min(left,right);
+    }
+    int minCostClimbingStairs(vector<int>& cost) {
+        memset(dp,-1,sizeof(dp));
+        return  min(rec(0,cost),rec(1,cost));
+    }
+};
