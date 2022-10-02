@@ -1,5 +1,7 @@
 Follow the Hacktoberfest Maintainer here : https://www.linkedin.com/in/milind-gupta-384a27190/
 
+Kindly star the repository on top-right corner
+
 
 # Creating Competitive-Coding-Section or subfolders
 Create sections labeled further in issue section
