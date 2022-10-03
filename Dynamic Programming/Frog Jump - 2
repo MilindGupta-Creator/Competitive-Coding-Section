@@ -1,0 +1,51 @@
+          #include <bits/stdc++.h>
+          #define ios ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+          #define ll long long int
+          #define all(x) (x).begin(),(x).end()
+          #define for0(i,n) for(ll i=0;i<n;i++)//Yes//YES
+          using namespace std;
+          ll dp[100001];
+          ll  recur(ll index,ll k,vector<ll>&h,ll &mini)
+          {
+            if (index<0) {return 1e18;}
+            if(index==0) return 0;
+           if(dp[index]!=-1)
+           {
+            return dp[index];  
+           }
+            vector<ll>o;
+           
+           ll ans1=1e18;
+           for1(i,k)
+           {
+            if (index-i>=0) ans1=abs(h[index]-h[index-i])+recur(index-i,k,h,mini);
+             o.pb(ans1);
+           }
+          sort(all(o));
+           return dp[index]=o[0];
+          }
+          void solve()
+          {
+          memset(dp,-1,sizeof(dp));
+          ll a,b;
+          cin>>a>>b;
+          ll arr[a];
+          for0(i,a) cin>>arr[i];
+          vector<ll> v;
+          for0(i,a)
+          {
+            v.push_back(arr[i]);
+          }
+          cout<<recur(a-1,b,v,mini);
+          }
+          int main()  
+          {
+          ios
+          ll t=1;
+          // cin>>t;
+          for1(i,t)
+          {
+           solve();
+          }
+           return 0;
+          }  
