@@ -1,0 +1,200 @@
+VECTORS:
+Dynamic arrays are known as the vectors here elements are pushback or popback can be done that inserting element from the end or inserting 
+the element in the vector from the end 
+
+here iterator is simply points to a particular location in the container
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> v;
+    vector<int> :: iterator it;
+    v.push_back(5);
+    while(v.back()>0)
+        v.push_back(v.back()-1);
+    for(it=v.begin();it!=v.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+    for(int i=0;i<v.size();i++)
+    cout<<v.at(i)<<" ";                                          //at is used to point at a particular specified location
+    cout<<endl;
+    while(!v.empty())
+    {
+    cout<<v.back()<<" ";
+    v.pop_back();
+    }
+    cout<<endl;
+    
+    return 0;
+}
+
+outputs are:
+5 4 3 2 1 0
+5 4 3 2 1 0
+0 1 2 3 4 5
+
+Traversal in the vectors: there are two types of the traversals in the vector 
+1.using the iterator which points the starting value to the vector
+2.using the normal loop 
+
+void traverse(vector<int> vec)
+{
+vector<int> :: iterator it;
+for(it=vec.begin();it!=vec.end();it++)
+cout<<it*<<" " ;
+cout<<endl;
+for(int i=0;i<vec.size();i++)
+{
+cout<<vec[i]<<" ";
+cout<<endl;
+}
+}
+
+LISTS in the cpp:
+
+Linked lists:List is a sequence container which takes constant time in inserting and removing elements. List in STL is implemented as Doubly Link List.
+
+The elements from List cannot be directly accessed. For example to access element of a particular position ,you have to iterate from a known position to that particular position.
+
+Linked list is always Implemented using the doubly linked list in the stl list is the container used to represent the list in cpp
+by default the doubley linked list is implemented in the standard template lib.
+
+#include<iostream>
+#include<list>
+using namespace std;
+int main()
+{
+    list<int> li;
+    list<int>:: iterator it;
+    li.push_back(3);
+    li.push_back(5);
+    
+    li.push_front(4);
+    li.push_front(5);
+    for(it=li.begin();it!=li.end();it++)
+    cout<<*it<<" ";
+    cout<<endl;
+    li.remove(5);
+    for(it=li.begin();it!=li.end();it++)
+    cout<<*it<<" ";
+    cout<<endl;
+    li.push_back(346);
+    li.pop_back();
+    // removes the element from the back
+    li.pop_front();
+    // removes the element from the front of the vector
+    for(it=li.begin();it!=li.end();it++)
+    cout<<*it<<" "<<endl;
+return 0;
+}
+
+outputs are:
+5 4 3 5 
+4 3 
+3 
+
+MAPS:
+
+Maps are used to map the key value pair to each other
+syntax:
+map<char ,int> mp;
+
+#include<isotream>
+#include<map>
+using namespace std;
+int main()
+{
+map <char,int> mp;
+map<char,int> mymap,mymap1;
+
+inserts elements individually in the map with the combination of the key value pair of the element
+
+mp.insert(pair<int,char>('a',2));
+mp.inset(pair<int,char>('b',1));
+
+mp.inset(pair<int,char>('c',43));
+
+mymap.insert(mp.begin(
+
+
+return 0;
+}
+
+ PAIRS:
+
+Pair is a container which can be used to bind two different values
+ which may the different types.Pair provides a way to store two hetrogeneous objects as a single unit 
+
+#include <iostream>
+#include<utility>
+using namespace std;
+int main() {
+   
+    pair<int,char> p;
+    pair<int,char > p1(2,'b');
+    p=make_pair(1,'a');
+
+    // here the make pair is used to intialize a pair with some value
+
+    cout<<p.first<<" "<<p.second<<endl;
+    cout<<p1.first<<' '<<p1.second<<endl;
+
+    //here the first and second are used to access the elements 
+    of the pair
+    
+    
+
+    return 0;
+}
+
+output:
+1 a
+2 b
+
+SETS:
+
+/*Sets are containers which store only unique values and permit easy look ups. The values in the sets are stored in some specific order (like ascending or descending). Elements can only be inserted or deleted, but cannot be modified. We can access and traverse set elements using iterators just like vectors*/
+
+#include<iostream>
+#include<set>
+using namespace std;
+int main()
+{
+    set<int> s1;
+    int ax[]={1,2,3,4,5,5};
+    set<int> s2(ax,ax+6);
+    set<int> s3(s2);
+    set<int> s4(s3.begin(),s3.end());
+    set<int> :: iterator it;
+    for(it=s4.begin();it!=s4.end();it++)
+    cout<<*it<<" ";
+    cout<<endl;
+    
+    /*sets will only contains the unique elements in a particular 
+     ascending or descending order of elements......below example is given here*/
+
+     set<int> x;
+     int arr[]={3,2,4,5,6,1};
+     for(int i=0;i<7;i++)
+     {
+         x.insert(arr[i]);
+         
+     }
+     /*here elements are inserted random order but after printing they
+     automatically get's printed in the form of the ascending order*/
+     set<int>:: iterator il;
+     for(it=x.begin();it!=x.end();it++)
+     cout<<*it<<" ";
+    
+    
+    
+    return 0;
+}
+
+outputs:
+1 2 3 4 5
+1 2 3 4 5
+
