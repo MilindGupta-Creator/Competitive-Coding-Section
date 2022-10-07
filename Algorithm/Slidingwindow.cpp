@@ -51,3 +51,5 @@ int lengthOfLongestSubstring(string s) {
      string t;
      cin>>t;
      cout<<"The length of longest substring is : "<<lengthOfLongestSubstring(t);
+     return 0;
+   }
