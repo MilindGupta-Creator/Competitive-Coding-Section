@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+   long long int t,j;
+   vector<int>v;
+   cin>>t;
+   while(t--){
+       long long int n;
+     long long  int c=0,d=0,e=0,i;
+       cin>>n;
+    long long int a[n];
+       for(i=0;i<n;i++){
+           cin>>a[i];
+           if(a[i]==1){
+               c++;
+           }
+         else if(a[i]==2){
+               d++;
+           }
+           else
+               e++;
+           }
+ v.push_back(c+e);}
+   for(j=0;j<v.size();j++){
+       cout<<v[j]<<"\n";
+   }
+   
+}
