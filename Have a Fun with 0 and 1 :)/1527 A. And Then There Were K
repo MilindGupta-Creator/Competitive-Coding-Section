@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+const int N=1e9+7;
+bool cmp(pair<int,int>&a,pair<int,int>&b){
+	return a.second<b.second;
+}
+ int power(ll a,ll b){
+   ll ans=1;
+   while(b){
+     if(b&1){
+       ans=(ans*1ll*a)%N;
+     }
+     a=(a*1ll*a)%N;
+     b>>=1;
+   }
+   return ans;
+ }
+int main() {
+	ios::sync_with_stdio(false), cin.tie(0);
+  ll t;cin>>t;
+  while(t--){
+    ll n,x,y,z,ans,cnt=0;
+    cin>>n;
+   
+    while(n>0){
+      n=n/2;cnt++;
+    }
+    cnt--;
+    ans=power(2,cnt);
+    cout<<ans-1<<"\n";
+  }
+}
